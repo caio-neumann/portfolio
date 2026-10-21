@@ -210,7 +210,7 @@ section{padding-block:clamp(56px,8vw,104px);border-top:1px solid var(--line)}
 @media (max-width:460px){.legend{grid-template-columns:minmax(0,1fr)}}
 
 /* ---------- cases ---------- */
-.tabs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.tabs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
 .tab{display:grid;gap:4px;text-align:left;padding:14px 16px;border-right:1px solid var(--line);background:var(--bg-2);min-width:0}
 .tab:last-child{border-right:0}
 .tab .y{font-family:var(--f-mono);font-size:.68rem;color:var(--muted);letter-spacing:.06em}
@@ -221,7 +221,7 @@ section{padding-block:clamp(56px,8vw,104px);border-top:1px solid var(--line)}
 .tab:hover:not([aria-selected="true"]){background:var(--bg-3)}
 @media (max-width:900px){
   .tabs-wrap{overflow-x:auto}
-  .tabs{grid-template-columns:repeat(5,minmax(170px,1fr));min-width:850px}
+  .tabs{grid-template-columns:repeat(6,minmax(170px,1fr));min-width:1020px}
 }
 .case{padding-top:40px}
 .case-head{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;max-width:900px}
@@ -567,7 +567,8 @@ section.deep{background:var(--bg-2)}
       <div class="tabs" role="tablist" aria-label="Cases">
         <button class="tab" role="tab" id="tab-gopro" aria-controls="case-gopro" aria-selected="true"><span class="y">2020&#8211;2024</span><span class="t">GoPro Brasil</span><span class="o">creators, Meet Ups, Podpah</span></button>
         <button class="tab" role="tab" id="tab-vicar" aria-controls="case-vicar" aria-selected="false" tabindex="-1"><span class="y">2025&#8211;2026</span><span class="t">Stock Car</span><span class="o">na Vicar</span></button>
-        <button class="tab" role="tab" id="tab-gopro15" aria-controls="case-gopro15" aria-selected="false" tabindex="-1"><span class="y">2015</span><span class="t">GoPro Brasil</span><span class="o">pela FleishmanHillard</span></button>
+        <button class="tab" role="tab" id="tab-gopro15" aria-controls="case-gopro15" aria-selected="false" tabindex="-1"><span class="y">2015&#8211;2018</span><span class="t">GoPro Brasil</span><span class="o">pela FleishmanHillard</span></button>
+        <button class="tab" role="tab" id="tab-fhsi" aria-controls="case-fhsi" aria-selected="false" tabindex="-1"><span class="y">2018&#8211;2019</span><span class="t">Social &amp; Innovation</span><span class="o">pela FleishmanHillard</span></button>
         <button class="tab" role="tab" id="tab-mundomit" aria-controls="case-mundomit" aria-selected="false" tabindex="-1"><span class="y">2019&#8211;2020</span><span class="t">MundoMIT</span><span class="o">na Ampfy</span></button>
         <button class="tab" role="tab" id="tab-scuderia" aria-controls="case-scuderia" aria-selected="false" tabindex="-1"><span class="y">2026</span><span class="t">Scuderia Bandeiras</span><span class="o">processos de marketing</span></button>
       </div>
@@ -576,7 +577,7 @@ section.deep{background:var(--bg-2)}
     <!-- CASE: GoPro 2015 -->
     <article class="case" role="tabpanel" id="case-gopro15" aria-labelledby="tab-gopro15" hidden>
       <div class="case-head">
-        <p class="eyebrow">2015 &#183; FleishmanHillard &#183; Senior Account Executive</p>
+        <p class="eyebrow">2015&#8211;2018 &#183; FleishmanHillard &#183; Senior Account Executive</p>
         <h3>A GoPro come&#231;a a falar portugu&#234;s</h3>
         <div class="case-tags"><span class="tag t-part">Participei</span><span class="tag t-ctx">Resultados do time</span></div>
         <p class="case-sum">Integrei o time da FleishmanHillard que implantou a comunica&#231;&#227;o local da GoPro no Brasil. A dire&#231;&#227;o do projeto &#233; atribu&#237;da publicamente a Alexandre Nunes, e os indicadores daquele per&#237;odo pertencem ao trabalho coletivo.</p>
@@ -594,6 +595,14 @@ section.deep{background:var(--bg-2)}
             </div>
             <p class="note">N&#250;meros do relato retrospectivo de Alexandre Nunes, publicado em 2023. A presen&#231;a digital soma as plataformas da marca.</p>
           </div>
+          <div class="blk full-only"><h4>Depois da implanta&#231;&#227;o, at&#233; 2018</h4><p>Lan&#231;amentos ao ar livre que reuniam imprensa e influenciadores: HERO5 em Tulum (M&#233;xico) e num resort no interior de S&#227;o Paulo, HERO6 num parque aqu&#225;tico e HERO7, em novembro de 2018, com rapel no Edif&#237;cio Altino Arantes. Em 2018 o time abriu o blog da GoPro Brasil no Medium e mantinha rela&#231;&#227;o cont&#237;nua com mais de 100 jornalistas e influenciadores.</p>
+            <div class="kpis">
+              <div><b>+47%</b><span>reportagens em estilo de vida, viagens e neg&#243;cios em 2015</span></div>
+              <div><b>+42%</b><span>reportagens em tecnologia no mesmo ano</span></div>
+              <div><b>1%</b><span>do conte&#250;do dos canais brasileiros vindo do exterior, em 2018</span></div>
+            </div>
+            <p class="note">Relato da ag&#234;ncia para o pr&#234;mio interno Talentos, do Grupo In Press, em 2018.</p>
+          </div>
         </div>
         <div class="contrib-col">
           <div class="blk"><h4>Minha contribui&#231;&#227;o</h4>
@@ -606,6 +615,59 @@ section.deep{background:var(--bg-2)}
           <div class="blk full-only"><h4>O que levei dessa etapa</h4><p>Traduzir diretrizes globais para uma conversa local e juntar PR, criadores e comunidade numa mesma opera&#231;&#227;o. Foi a base para voltar &#224; GoPro em 2020, desta vez do lado de dentro.</p></div>
           <div class="credit"><b>Cr&#233;dito</b>Alexandre Pereira Nunes, dire&#231;&#227;o do projeto, e o time FleishmanHillard da conta GoPro.</div>
           <div class="blk full-only" style="margin-top:20px"><h4>Registro</h4><div class="vids"><a href="https://pt.linkedin.com/pulse/video-case-fleishmanhillard-gopro-2015-caio-neumann" target="_blank" rel="noopener">Video case FH e GoPro 2015 &#8599;</a></div></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- CASE: FH Social & Innovation -->
+    <article class="case" role="tabpanel" id="case-fhsi" aria-labelledby="tab-fhsi" hidden>
+      <div class="case-head">
+        <p class="eyebrow">2018&#8211;2019 &#183; FleishmanHillard &#183; Social &amp; Innovation Manager</p>
+        <h3>Um n&#250;cleo digital a servi&#231;o de v&#225;rias marcas</h3>
+        <div class="case-tags"><span class="tag t-lead">Liderei</span><span class="tag t-shared">Compartilhado</span></div>
+        <p class="case-sum">Como gerente de Social &amp; Innovation, conduzi o n&#250;cleo que levava estrat&#233;gia digital &#224;s contas da FleishmanHillard Brasil: executivos no LinkedIn, cursos para lideran&#231;as, monitoramento de redes, brand publishing e a camada social de campanhas integradas.</p>
+      </div>
+      <div class="case-grid">
+        <div class="contrib-col">
+          <div class="blk full-only"><h4>Contexto</h4><p>O n&#250;cleo reunia os servi&#231;os digitais da ag&#234;ncia (redes sociais, brand publishing, posicionamento de executivos, m&#237;dia paga, ativa&#231;&#245;es e monitoramento) e os oferecia a clientes de setores diferentes, da tecnologia &#224; ind&#250;stria.</p></div>
+          <div class="blk"><h4>Minha contribui&#231;&#227;o</h4>
+            <ul class="ev">
+              <li><span class="tag t-lead">Liderei</span><p>Gest&#227;o do n&#250;cleo e da equipe, com seis pessoas em fevereiro de 2019, e cria&#231;&#227;o de propostas e planos integrados.</p></li>
+              <li><span class="tag t-lead">Liderei</span><p>Programa de LinkedIn para executivos, o PR 2.0: CEO e COO da SAP Brasil e CEO do CNA Idiomas, com diagn&#243;stico, linha editorial, artigos e posts.</p></li>
+              <li><span class="tag t-lead">Liderei</span><p>Cursos de LinkedIn e PR 2.0 para executivos da Huawei no Brasil e de redes sociais para a equipe de comunica&#231;&#227;o da Veracel, com diagn&#243;stico dos perfis da empresa e de seus executivos.</p></li>
+              <li><span class="tag t-lead">Liderei</span><p>Monitoramento de redes sociais para a Johnson &amp; Johnson.</p></li>
+              <li><span class="tag t-shared">Compartilhado</span><p>Camada social e digital de campanhas da ag&#234;ncia para GM, Votorantim, Shell e Johnson &amp; Johnson.</p></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="blk"><h4>Resultado &#183; SAP Brasil, jul&#8211;set 2018</h4>
+            <div class="kpis">
+              <div><b>+176 mil</b><span>visualiza&#231;&#245;es nos posts da CEO em tr&#234;s meses</span></div>
+              <div><b>+1.184</b><span>novos seguidores no perfil da CEO, que chegou a 20,3 mil</span></div>
+              <div><b>+57 mil</b><span>visualiza&#231;&#245;es nos posts do COO no mesmo per&#237;odo</span></div>
+            </div>
+            <p class="note">Crescimento org&#226;nico, sem m&#237;dia paga, registrado no relat&#243;rio da ag&#234;ncia.</p>
+          </div>
+          <div class="sub">
+            <h5>GM &#183; Craques no Engajamento <span class="tag t-shared">Compartilhado</span></h5>
+            <p>Campanha interna para os cerca de 16 mil funcion&#225;rios da GM no Brasil, com &#225;lbum de figurinhas, concurso de hino e embaixadores do esporte. Na pesquisa interna, 82% disseram que a campanha foi essencial para o alinhamento &#224;s metas da empresa.</p>
+          </div>
+          <div class="sub">
+            <h5>Votorantim &#183; Legado das &#193;guas <span class="tag t-shared">Compartilhado</span></h5>
+            <p>Um dia na reserva para jornalistas, influenciadores e atletas, e um encontro com o Valor Econ&#244;mico. Resultado: capa do Valor, mais de 24 reportagens, 59 hist&#243;rias contadas por influenciadores e mais de 300 e-mails de interessados em ecoturismo em uma semana.</p>
+          </div>
+          <div class="sub">
+            <h5>Shell &#183; Nova Shell V-Power <span class="tag t-shared">Compartilhado</span></h5>
+            <p>O Museu Catavento virou o laborat&#243;rio da nova gasolina, com v&#237;deo em parceria com o Manual do Mundo: 1,2 milh&#227;o de visualiza&#231;&#245;es org&#226;nicas em sete dias e 159 mat&#233;rias.</p>
+          </div>
+          <div class="sub">
+            <h5>Johnson &amp; Johnson &#183; Mulher.com.br <span class="tag t-shared">Compartilhado</span></h5>
+            <p>Plataforma de brand publishing de beleza e bem-estar, com site, Instagram e Facebook. A ag&#234;ncia cuidava da estrat&#233;gia e da curadoria de conte&#250;do, integrada &#224; produ&#231;&#227;o e &#224; m&#237;dia de outros fornecedores.</p>
+          </div>
+          <p class="note full-only">Resultados das campanhas publicados pela FleishmanHillard Brasil, de trabalho conjunto da ag&#234;ncia.</p>
+          <div class="blk full-only" style="margin-top:20px"><h4>O que levei dessa etapa</h4><p>Transformar servi&#231;o digital em oferta que se repete entre clientes, e ensinar executivos a usar o pr&#243;prio perfil como canal de reputa&#231;&#227;o.</p></div>
+          <div class="credit"><b>Cr&#233;dito</b>Equipe do n&#250;cleo Social &amp; Innovation e times de atendimento da FleishmanHillard Brasil.</div>
         </div>
       </div>
     </article>
@@ -656,6 +718,7 @@ section.deep{background:var(--bg-2)}
               <li><span class="tag t-lead">Liderei</span><p>Rela&#231;&#227;o com creators e embaixadores: em maio de 2024, cerca de 20 embaixadores apoiados diretamente.</p></li>
               <li><span class="tag t-lead">Liderei</span><p>Gest&#227;o local do programa GoPro Advocates, criado globalmente pela marca.</p></li>
               
+              <li><span class="tag t-shared">Compartilhado</span><p>GoPro no Unlock, a programa&#231;&#227;o de conte&#250;do da CCXP22: v&#237;deos em c&#226;mera lenta de cerca de 40 palestrantes, gravados com c&#226;meras da marca.</p></li>
               <li><span class="tag t-shared">Compartilhado</span><p>Interface com e-commerce, CRM e times globais; adapta&#231;&#227;o de campanhas globais ao mercado brasileiro.</p></li>
               <li><span class="tag t-shared">Compartilhado</span><p>Acompanhamento do planejamento, da aloca&#231;&#227;o e da execu&#231;&#227;o de verbas anuais de comunica&#231;&#227;o, creators, ativa&#231;&#245;es e parcerias da opera&#231;&#227;o brasileira.</p></li>
             </ul>
@@ -783,9 +846,7 @@ section.deep{background:var(--bg-2)}
       <div class="others">
         <div class="other"><p class="y">2010&#8211;2011</p><h4>S&#227;o Paulo 2022</h4><span class="tag t-part" style="justify-self:start">Participei</span><p>Equipe de Pesquisa e Informa&#231;&#245;es de uma publica&#231;&#227;o sobre o futuro da cidade.</p></div>
         <div class="other"><p class="y">2013</p><h4>Circuito Nova Schin Stock Car</h4><span class="tag t-part" style="justify-self:start">Participei</span><p>Contato de assessoria da Concept PR para a Brasil Kirin. Primeiro trabalho ligado ao automobilismo.</p></div>
-        <div class="other"><p class="y">2018&#8211;2019</p><h4>N&#250;cleo Social &amp; Innovation</h4><span class="tag t-lead" style="justify-self:start">Liderei</span><p>Propostas integradas, brand publishing e posicionamento digital de executivos na FleishmanHillard.</p></div>
-        <div class="other"><p class="y">2018&#8211;2019</p><h4>Executive PR 2.0</h4><span class="tag t-lead" style="justify-self:start">Liderei</span><p>Treinamento de rela&#231;&#245;es p&#250;blicas em redes sociais para executivos de clientes como Huawei, Veracel, SAP e CNA.</p></div>
-      </div>
+        </div>
     </div>
   </div>
 </section>
@@ -901,7 +962,7 @@ section.deep{background:var(--bg-2)}
           <div class="roles full-only">
             <div class="role"><p class="when">2011&#8211;2012</p><div><h4>In Press Porter Novelli <em>&#183; consultoria</em></h4><p>Conte&#250;do digital e corporativo para IBM, Carreta da Sa&#250;de, Pirelli e Brink's. Freelance para AG2/OCA em 2011. Textos para revistas de clientes: Giro em Casa, da Pirelli (jan/fev 2012), e mat&#233;ria de capa da Clareza, da Brink's.</p></div></div>
             <div class="role"><p class="when">2013</p><div><h4>LB Comunica e Concept PR <em>&#183; assessoria</em></h4><p>PR de cultura e bebidas (APAA, Brasil Kirin). Na Concept PR, contato de assessoria da Brasil Kirin no release do Circuito Nova Schin Stock Car.</p></div></div>
-            <div class="role"><p class="when">2013&#8211;mar/2015</p><div><h4>Ideal H+K Strategies <em>&#183; atendimento</em></h4><p>PR e comunica&#231;&#227;o corporativa para a Yamaha Motor do Brasil, incluindo o lan&#231;amento da Fazer 150 em 2013.</p></div></div>
+            <div class="role"><p class="when">2013&#8211;mar/2015</p><div><h4>Ideal H+K Strategies <em>&#183; atendimento</em></h4><p>PR e comunica&#231;&#227;o corporativa para a Yamaha Motor do Brasil, incluindo o lan&#231;amento da Fazer 150 em 2013. A Concept PR e a Ideal faziam parte do mesmo Grupo Ideal.</p></div></div>
           </div>
         </div>
       </article></div></details>
@@ -913,7 +974,7 @@ section.deep{background:var(--bg-2)}
           <p class="scope"><b>Escopo</b>Da rotina de uma conta global (GoPro) &#224; gest&#227;o de equipe e de um n&#250;cleo de servi&#231;os digitais aplicados a v&#225;rios clientes. A lideran&#231;a de equipe passa a ser central com a ger&#234;ncia, em 2018.</p>
           <div class="roles full-only">
             <div class="role"><p class="when">abr/2015&#8211;2018</p><div><h4>Senior Account Executive</h4><p>Time da implanta&#231;&#227;o da GoPro no Brasil: PR, imprensa, influenciadores, seeding de equipamentos, eventos e coordena&#231;&#227;o da rotina da equipe na conta. <a href="#case-gopro15" data-case="gopro15">Ver case</a>.</p></div></div>
-            <div class="role"><p class="when">2018&#8211;abr/2019</p><div><h4>Social &amp; Innovation Manager</h4><p>Gest&#227;o da equipe e do n&#250;cleo de comunica&#231;&#227;o digital: propostas integradas, brand publishing, posicionamento de executivos, canais sociais e treinamentos (Executive PR 2.0). Contas citadas: GoPro, Johnson &amp; Johnson, SAP, Ra&#237;zen, Veracel, Cyrela, CNA, Votorantim, Huawei.</p></div></div>
+            <div class="role"><p class="when">2018&#8211;abr/2019</p><div><h4>Social &amp; Innovation Manager</h4><p>Gest&#227;o da equipe, com seis pessoas em 2019, e do n&#250;cleo de comunica&#231;&#227;o digital: propostas integradas, brand publishing, posicionamento de executivos, canais sociais e treinamentos (Executive PR 2.0). <a href="#case-fhsi" data-case="fhsi">Ver case</a>. Contas citadas: GoPro, Johnson &amp; Johnson, SAP, Ra&#237;zen, Veracel, Cyrela, CNA, Votorantim, Huawei.</p></div></div>
           </div>
         </div>
       </article>
@@ -992,7 +1053,7 @@ section.deep{background:var(--bg-2)}
       <li><span class="kind">Bootcamp</span><div><h4>Branded Content &amp; Entertainment &#183; Miami Ad School</h4><p>Forma&#231;&#227;o complementar de curta dura&#231;&#227;o.</p></div><span class="yr">2019</span></li>
       <li><span class="kind">Reconhecimento acad&#234;mico</span><div><h4>Branded Content Top Dog &#183; Miami Ad School</h4><p>Destaque da turma do bootcamp, registrado no perfil p&#250;blico.</p></div><span class="yr">out/2019</span></li>
       <li><span class="kind">Gradua&#231;&#227;o</span><div><h4>Comunica&#231;&#227;o Social &#183; Universidade Municipal de S&#227;o Caetano do Sul</h4><p>Habilita&#231;&#227;o em Jornalismo, cursada entre 2007 e 2010; cola&#231;&#227;o de grau em 2011.</p></div><span class="yr">2007&#8211;2010</span></li>
-      <li><span class="kind">Cursos livres</span><div><h4>Forma&#231;&#227;o complementar</h4><p>Curso Abril de Jornalismo (2012); hist&#243;ria oral, Museu da Pessoa (2012); Marketing para N&#227;o Marketeiros, Funda&#231;&#227;o C&#225;sper L&#237;bero (2015); roteiro, Academia Internacional de Cinema (2015); blogs corporativos, Aberje (2008); Social &amp; Innovation University, n&#237;veis 1 e 2 (FleishmanHillard).</p></div><span class="yr">2008&#8211;2015</span></li>
+      <li><span class="kind">Cursos livres</span><div><h4>Forma&#231;&#227;o complementar</h4><p>Curso Abril de Jornalismo (2012), com produ&#231;&#227;o da <a href="https://mirante1.wordpress.com/2013/01/10/plug-2012-detective-comics-a-morte-de-um-desenhista/plug2012/" target="_blank" rel="noopener">PLUG</a>, revista anual do curso; hist&#243;ria oral, Museu da Pessoa (2012); Marketing para N&#227;o Marketeiros, Funda&#231;&#227;o C&#225;sper L&#237;bero (2015); roteiro, Academia Internacional de Cinema (2015); blogs corporativos, Aberje (2008); Social &amp; Innovation University, n&#237;veis 1 e 2 (FleishmanHillard).</p></div><span class="yr">2008&#8211;2015</span></li>
       <li><span class="kind">Idiomas</span><div><h4>Portugu&#234;s nativo &#183; ingl&#234;s fluente &#183; espanhol avan&#231;ado &#183; mandarim b&#225;sico, em estudo</h4><p>N&#237;veis autodeclarados.</p></div><span class="yr">&#183;</span></li>
     </ul>
   </div>
@@ -1112,7 +1173,8 @@ section.deep{background:var(--bg-2)}
       <div class="tabs" role="tablist" aria-label="Cases">
         <button class="tab" role="tab" id="tab-gopro" aria-controls="case-gopro" aria-selected="true"><span class="y">2020&#8211;2024</span><span class="t">GoPro Brazil</span><span class="o">creators, Meet Ups, Podpah</span></button>
         <button class="tab" role="tab" id="tab-vicar" aria-controls="case-vicar" aria-selected="false" tabindex="-1"><span class="y">2025&#8211;2026</span><span class="t">Stock Car</span><span class="o">at Vicar</span></button>
-        <button class="tab" role="tab" id="tab-gopro15" aria-controls="case-gopro15" aria-selected="false" tabindex="-1"><span class="y">2015</span><span class="t">GoPro Brazil</span><span class="o">at FleishmanHillard</span></button>
+        <button class="tab" role="tab" id="tab-gopro15" aria-controls="case-gopro15" aria-selected="false" tabindex="-1"><span class="y">2015&#8211;2018</span><span class="t">GoPro Brazil</span><span class="o">at FleishmanHillard</span></button>
+        <button class="tab" role="tab" id="tab-fhsi" aria-controls="case-fhsi" aria-selected="false" tabindex="-1"><span class="y">2018&#8211;2019</span><span class="t">Social &amp; Innovation</span><span class="o">at FleishmanHillard</span></button>
         <button class="tab" role="tab" id="tab-mundomit" aria-controls="case-mundomit" aria-selected="false" tabindex="-1"><span class="y">2019&#8211;2020</span><span class="t">MundoMIT</span><span class="o">at Ampfy</span></button>
         <button class="tab" role="tab" id="tab-scuderia" aria-controls="case-scuderia" aria-selected="false" tabindex="-1"><span class="y">2026</span><span class="t">Scuderia Bandeiras</span><span class="o">marketing processes</span></button>
       </div>
@@ -1121,7 +1183,7 @@ section.deep{background:var(--bg-2)}
     <!-- CASE: GoPro 2015 -->
     <article class="case" role="tabpanel" id="case-gopro15" aria-labelledby="tab-gopro15" hidden>
       <div class="case-head">
-        <p class="eyebrow">2015 &#183; FleishmanHillard &#183; Senior Account Executive</p>
+        <p class="eyebrow">2015&#8211;2018 &#183; FleishmanHillard &#183; Senior Account Executive</p>
         <h3>GoPro starts speaking Portuguese</h3>
         <div class="case-tags"><span class="tag t-part">Team member</span><span class="tag t-ctx">Team results</span></div>
         <p class="case-sum">I was part of the FleishmanHillard team that launched GoPro's local communications in Brazil. Leadership of the project is publicly credited to Alexandre Nunes, and the numbers from that period belong to the team.</p>
@@ -1139,6 +1201,14 @@ section.deep{background:var(--bg-2)}
             </div>
             <p class="note">Figures from a retrospective account by Alexandre Nunes, published in 2023. Digital presence combines the brand's platforms.</p>
           </div>
+          <div class="blk full-only"><h4>After the launch, through 2018</h4><p>Outdoor launches that brought press and influencers together: HERO5 in Tulum (Mexico) and at a resort outside S&#227;o Paulo, HERO6 at a water park and HERO7, in November 2018, with a rappel down the Altino Arantes building. In 2018 the team opened GoPro Brazil's Medium blog and kept ongoing relationships with more than 100 journalists and influencers.</p>
+            <div class="kpis">
+              <div><b>+47%</b><span>press stories in lifestyle, travel and business in 2015</span></div>
+              <div><b>+42%</b><span>technology stories the same year</span></div>
+              <div><b>1%</b><span>of content on the Brazilian channels sourced from abroad, in 2018</span></div>
+            </div>
+            <p class="note">Agency account written for Grupo In Press's internal Talentos award, 2018.</p>
+          </div>
         </div>
         <div class="contrib-col">
           <div class="blk"><h4>My contribution</h4>
@@ -1151,6 +1221,59 @@ section.deep{background:var(--bg-2)}
           <div class="blk full-only"><h4>What I took from it</h4><p>Translating global guidelines into a local conversation, and bringing PR, creators and community into one operation. It was the foundation for returning to GoPro in 2020, this time in-house.</p></div>
           <div class="credit"><b>Credit</b>Alexandre Pereira Nunes, project lead, and the FleishmanHillard GoPro account team.</div>
           <div class="blk full-only" style="margin-top:20px"><h4>Record</h4><div class="vids"><a href="https://pt.linkedin.com/pulse/video-case-fleishmanhillard-gopro-2015-caio-neumann" target="_blank" rel="noopener">FH and GoPro 2015 video case &#8599;</a></div></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- CASE: FH Social & Innovation -->
+    <article class="case" role="tabpanel" id="case-fhsi" aria-labelledby="tab-fhsi" hidden>
+      <div class="case-head">
+        <p class="eyebrow">2018&#8211;2019 &#183; FleishmanHillard &#183; Social &amp; Innovation Manager</p>
+        <h3>A digital unit serving many brands</h3>
+        <div class="case-tags"><span class="tag t-lead">Led</span><span class="tag t-shared">Shared</span></div>
+        <p class="case-sum">As Social &amp; Innovation Manager, I ran the unit that brought digital strategy to FleishmanHillard Brazil's accounts: executives on LinkedIn, training for leaders, social listening, brand publishing and the social layer of integrated campaigns.</p>
+      </div>
+      <div class="case-grid">
+        <div class="contrib-col">
+          <div class="blk full-only"><h4>Context</h4><p>The unit brought together the agency's digital services (social media, brand publishing, executive positioning, paid media, activations and listening) and offered them to clients across sectors, from technology to heavy industry.</p></div>
+          <div class="blk"><h4>My contribution</h4>
+            <ul class="ev">
+              <li><span class="tag t-lead">Led</span><p>Managed the unit and its team, six people in February 2019, and built proposals and integrated plans.</p></li>
+              <li><span class="tag t-lead">Led</span><p>A LinkedIn program for executives, PR 2.0: the CEO and COO of SAP Brazil and the CEO of CNA Idiomas, with diagnosis, editorial line, articles and posts.</p></li>
+              <li><span class="tag t-lead">Led</span><p>LinkedIn and PR 2.0 training for Huawei executives in Brazil, and social media training for Veracel's communications team, with a review of the company's and its executives' profiles.</p></li>
+              <li><span class="tag t-lead">Led</span><p>Social listening for Johnson &amp; Johnson.</p></li>
+              <li><span class="tag t-shared">Shared</span><p>The social and digital layer of agency campaigns for GM, Votorantim, Shell and Johnson &amp; Johnson.</p></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="blk"><h4>Result &#183; SAP Brazil, Jul&#8211;Sep 2018</h4>
+            <div class="kpis">
+              <div><b>+176k</b><span>views on the CEO's posts in three months</span></div>
+              <div><b>+1,184</b><span>new followers on the CEO's profile, reaching 20.3k</span></div>
+              <div><b>+57k</b><span>views on the COO's posts in the same period</span></div>
+            </div>
+            <p class="note">Organic growth, no paid media, as recorded in the agency's report.</p>
+          </div>
+          <div class="sub">
+            <h5>GM &#183; Craques no Engajamento <span class="tag t-shared">Shared</span></h5>
+            <p>An internal campaign for GM's roughly 16,000 employees in Brazil, with a sticker album, an anthem contest and sports ambassadors. In the internal survey, 82% said the campaign was key to aligning with the company's goals.</p>
+          </div>
+          <div class="sub">
+            <h5>Votorantim &#183; Legado das &#193;guas <span class="tag t-shared">Shared</span></h5>
+            <p>A day at the reserve for journalists, influencers and athletes, plus a meeting with business daily Valor Econ&#244;mico. Result: a Valor cover story, more than 24 press stories, 59 influencer stories and more than 300 emails from ecotourism prospects in one week.</p>
+          </div>
+          <div class="sub">
+            <h5>Shell &#183; New Shell V-Power <span class="tag t-shared">Shared</span></h5>
+            <p>The Catavento science museum became the lab for the new fuel, with a video made with science channel Manual do Mundo: 1.2 million organic views in seven days and 159 press stories.</p>
+          </div>
+          <div class="sub">
+            <h5>Johnson &amp; Johnson &#183; Mulher.com.br <span class="tag t-shared">Shared</span></h5>
+            <p>A beauty and wellbeing brand publishing platform across a website, Instagram and Facebook. The agency ran content strategy and curation, integrated with production and media from other suppliers.</p>
+          </div>
+          <p class="note full-only">Campaign results as published by FleishmanHillard Brazil, from the agency's joint work.</p>
+          <div class="blk full-only" style="margin-top:20px"><h4>What I took from it</h4><p>Turning a digital service into an offer that repeats across clients, and teaching executives to use their own profile as a reputation channel.</p></div>
+          <div class="credit"><b>Credit</b>The Social &amp; Innovation team and the account teams of FleishmanHillard Brazil.</div>
         </div>
       </div>
     </article>
@@ -1201,6 +1324,7 @@ section.deep{background:var(--bg-2)}
               <li><span class="tag t-lead">Led</span><p>Creator and ambassador relations: in May 2024, about 20 ambassadors were directly supported.</p></li>
               <li><span class="tag t-lead">Led</span><p>Local management of the GoPro Advocates program, created globally by the brand.</p></li>
               
+              <li><span class="tag t-shared">Shared</span><p>GoPro at Unlock, the content programme of CCXP22: slow-motion videos of about 40 speakers, shot on the brand's cameras.</p></li>
               <li><span class="tag t-shared">Shared</span><p>Interface with e-commerce, CRM and global teams; adapting global campaigns to the Brazilian market.</p></li>
               <li><span class="tag t-shared">Shared</span><p>Tracking the planning, allocation and spend of yearly budgets for communications, creators, activations and partnerships in the Brazil operation.</p></li>
             </ul>
@@ -1328,9 +1452,7 @@ section.deep{background:var(--bg-2)}
       <div class="others">
         <div class="other"><p class="y">2010&#8211;2011</p><h4>S&#227;o Paulo 2022</h4><span class="tag t-part" style="justify-self:start">Team member</span><p>Research and Information team for a publication about the city's future.</p></div>
         <div class="other"><p class="y">2013</p><h4>Nova Schin Stock Car Circuit</h4><span class="tag t-part" style="justify-self:start">Team member</span><p>Concept PR press contact for Brasil Kirin. My first work connected to motorsport.</p></div>
-        <div class="other"><p class="y">2018&#8211;2019</p><h4>Social &amp; Innovation unit</h4><span class="tag t-lead" style="justify-self:start">Led</span><p>Integrated proposals, brand publishing and executive digital positioning at FleishmanHillard.</p></div>
-        <div class="other"><p class="y">2018&#8211;2019</p><h4>Executive PR 2.0</h4><span class="tag t-lead" style="justify-self:start">Led</span><p>Social media PR training for executives at clients such as Huawei, Veracel, SAP and CNA.</p></div>
-      </div>
+        </div>
     </div>
   </div>
 </section>
@@ -1446,7 +1568,7 @@ section.deep{background:var(--bg-2)}
           <div class="roles full-only">
             <div class="role"><p class="when">2011&#8211;2012</p><div><h4>In Press Porter Novelli <em>&#183; consultant</em></h4><p>Digital and corporate content for IBM, Carreta da Sa&#250;de, Pirelli and Brink's. Freelance for AG2/OCA in 2011. Writing for client magazines: Giro em Casa, Pirelli's staff magazine (Jan/Feb 2012), and a cover story for Brink's Clareza.</p></div></div>
             <div class="role"><p class="when">2013</p><div><h4>LB Comunica and Concept PR <em>&#183; PR</em></h4><p>Culture and beverage PR (APAA, Brasil Kirin). At Concept PR, listed as a Brasil Kirin press contact on the Nova Schin Stock Car Circuit release.</p></div></div>
-            <div class="role"><p class="when">2013&#8211;Mar 2015</p><div><h4>Ideal H+K Strategies <em>&#183; account team</em></h4><p>PR and corporate communications for Yamaha Motor do Brasil, including the 2013 launch of the Fazer 150.</p></div></div>
+            <div class="role"><p class="when">2013&#8211;Mar 2015</p><div><h4>Ideal H+K Strategies <em>&#183; account team</em></h4><p>PR and corporate communications for Yamaha Motor do Brasil, including the 2013 launch of the Fazer 150. Concept PR and Ideal were part of the same Grupo Ideal.</p></div></div>
           </div>
         </div>
       </article></div></details>
@@ -1458,7 +1580,7 @@ section.deep{background:var(--bg-2)}
           <p class="scope"><b>Scope</b>From the day-to-day of a global account (GoPro) to managing a team and a unit of digital services for several clients. Team leadership becomes central with the manager role in 2018.</p>
           <div class="roles full-only">
             <div class="role"><p class="when">Apr 2015&#8211;2018</p><div><h4>Senior Account Executive</h4><p>Team that launched GoPro's local communications in Brazil: PR, media, influencers, product seeding, events and coordination of the account team's routine. <a href="#case-gopro15" data-case="gopro15">See case</a>.</p></div></div>
-            <div class="role"><p class="when">2018&#8211;Apr 2019</p><div><h4>Social &amp; Innovation Manager</h4><p>Managed the team and the digital communications unit: integrated proposals, brand publishing, executive positioning, social channels and training (Executive PR 2.0). Accounts named: GoPro, Johnson &amp; Johnson, SAP, Ra&#237;zen, Veracel, Cyrela, CNA, Votorantim, Huawei.</p></div></div>
+            <div class="role"><p class="when">2018&#8211;Apr 2019</p><div><h4>Social &amp; Innovation Manager</h4><p>Managed the team, six people in 2019, and the digital communications unit: integrated proposals, brand publishing, executive positioning, social channels and training (Executive PR 2.0). <a href="#case-fhsi" data-case="fhsi">See case</a>. Accounts named: GoPro, Johnson &amp; Johnson, SAP, Ra&#237;zen, Veracel, Cyrela, CNA, Votorantim, Huawei.</p></div></div>
           </div>
         </div>
       </article>
@@ -1537,7 +1659,7 @@ section.deep{background:var(--bg-2)}
       <li><span class="kind">Bootcamp</span><div><h4>Branded Content &amp; Entertainment &#183; Miami Ad School</h4><p>Short complementary program.</p></div><span class="yr">2019</span></li>
       <li><span class="kind">Academic recognition</span><div><h4>Branded Content Top Dog &#183; Miami Ad School</h4><p>Distinction in the bootcamp class, shown on my public profile.</p></div><span class="yr">Oct 2019</span></li>
       <li><span class="kind">Bachelor's degree</span><div><h4>Social Communication &#183; Universidade Municipal de S&#227;o Caetano do Sul</h4><p>Journalism track, 2007 to 2010; graduation ceremony in 2011.</p></div><span class="yr">2007&#8211;2010</span></li>
-      <li><span class="kind">Short courses</span><div><h4>Continuing education</h4><p>Curso Abril de Jornalismo (2012); oral history, Museu da Pessoa (2012); Marketing for Non-Marketers, Funda&#231;&#227;o C&#225;sper L&#237;bero (2015); screenwriting, Academia Internacional de Cinema (2015); corporate blogging, Aberje (2008); Social &amp; Innovation University, levels 1 and 2 (FleishmanHillard).</p></div><span class="yr">2008&#8211;2015</span></li>
+      <li><span class="kind">Short courses</span><div><h4>Continuing education</h4><p>Curso Abril de Jornalismo (2012), producing <a href="https://mirante1.wordpress.com/2013/01/10/plug-2012-detective-comics-a-morte-de-um-desenhista/plug2012/" target="_blank" rel="noopener">PLUG</a>, the course's annual magazine; oral history, Museu da Pessoa (2012); Marketing for Non-Marketers, Funda&#231;&#227;o C&#225;sper L&#237;bero (2015); screenwriting, Academia Internacional de Cinema (2015); corporate blogging, Aberje (2008); Social &amp; Innovation University, levels 1 and 2 (FleishmanHillard).</p></div><span class="yr">2008&#8211;2015</span></li>
       <li><span class="kind">Languages</span><div><h4>Portuguese, native &#183; English, fluent &#183; Spanish, advanced &#183; Mandarin, basic (studying)</h4><p>Self-assessed levels.</p></div><span class="yr">&#183;</span></li>
     </ul>
   </div>
@@ -1570,7 +1692,7 @@ section.deep{background:var(--bg-2)}
          en:{copy:'copy',copied:'copied',sel:'selected',items:' items',verify:'to verify',title:'Caio Neumann Portfolio',lang:'en'}};
   var CD={pt:[
     {n:'Lideran\u00e7a de equipes e parceiros',d:'Organizar pessoas, ag\u00eancias e fornecedores em torno de prioridades claras, do n\u00facleo de ag\u00eancia ao time interno de uma propriedade esportiva.',e:[
-      ['lead','Gest\u00e3o da equipe e do n\u00facleo Social & Innovation da FleishmanHillard, a partir de 2018.','ph3','FleishmanHillard'],
+      ['lead','Gest\u00e3o da equipe e do n\u00facleo Social & Innovation da FleishmanHillard, a partir de 2018.','case-fhsi','FH Social & Innovation'],
       ['lead','Gest\u00e3o de ag\u00eancias terceiras de conte\u00fado e de parceiros de m\u00eddia, influ\u00eancia e audiovisual no MundoMIT.','case-mundomit','MundoMIT'],
       ['lead','Ag\u00eancias, creators e fornecedores da comunica\u00e7\u00e3o da GoPro no Brasil.','case-gopro','GoPro 2020\u20132024'],
       ['lead','Time interno de marketing e parceiros externos na Vicar.','case-vicar','Vicar'],
@@ -1582,7 +1704,7 @@ section.deep{background:var(--bg-2)}
       ['lead','Posicionamento, narrativa institucional e arquitetura de marca da Scuderia.','case-scuderia','Scuderia']]},
     {n:'PR e reputa\u00e7\u00e3o',d:'Rela\u00e7\u00e3o com imprensa, porta-voz e posicionamento de executivos, constru\u00eddos em ag\u00eancias e aplicados dentro da marca.',e:[
       ['part','Atendimento de PR para Yamaha, Brasil Kirin e outros clientes de ag\u00eancia.','ph2','Ag\u00eancias 2011\u20132015'],
-      ['lead','Posicionamento digital de executivos e treinamento Executive PR 2.0.','ph3','FleishmanHillard'],
+      ['lead','LinkedIn para executivos da SAP e do CNA e cursos para Huawei e Veracel.','case-fhsi','FH Social & Innovation'],
       ['lead','Porta-voz da GoPro no Brasil em imprensa e a\u00e7\u00f5es com parceiros.','case-gopro','GoPro 2020\u20132024']]},
     {n:'Conte\u00fado e branded content',d:'Pauta cont\u00ednua com opera\u00e7\u00e3o por tr\u00e1s: calend\u00e1rio, formato, fornecedores e curadoria.',e:[
       ['lead','Reportagem e conte\u00fado digital no Planeta Sustent\u00e1vel.','ph1','Editora Abril'],
@@ -1614,7 +1736,7 @@ section.deep{background:var(--bg-2)}
       ['lead','Estrutura inicial das ofertas comerciais de experi\u00eancias e patroc\u00ednio.','case-scuderia','Scuderia']]}
   ],en:[
     {n:'Leading teams and partners',d:'Organizing people, agencies and suppliers around clear priorities, from an agency unit to the in-house team of a sports property.',e:[
-      ['lead','Managed the Social & Innovation team and unit at FleishmanHillard from 2018.','ph3','FleishmanHillard'],
+      ['lead','Managed the Social & Innovation team and unit at FleishmanHillard from 2018.','case-fhsi','FH Social & Innovation'],
       ['lead','Managed third-party content agencies and media, influencer and video partners for MundoMIT.','case-mundomit','MundoMIT'],
       ['lead','Agencies, creators and suppliers for GoPro communications in Brazil.','case-gopro','GoPro 2020\u20132024'],
       ['lead','In-house marketing team and external partners at Vicar.','case-vicar','Vicar'],
@@ -1626,7 +1748,7 @@ section.deep{background:var(--bg-2)}
       ['lead','Positioning, institutional narrative and brand architecture for Scuderia.','case-scuderia','Scuderia']]},
     {n:'PR and reputation',d:'Media relations, spokesperson work and executive positioning, built in agencies and applied in-house.',e:[
       ['part','PR account work for Yamaha, Brasil Kirin and other agency clients.','ph2','Agencies 2011\u20132015'],
-      ['lead','Executive digital positioning and the Executive PR 2.0 training.','ph3','FleishmanHillard'],
+      ['lead','LinkedIn for SAP and CNA executives, and training for Huawei and Veracel.','case-fhsi','FH Social & Innovation'],
       ['lead','GoPro spokesperson in Brazil, with press and partner initiatives.','case-gopro','GoPro 2020\u20132024']]},
     {n:'Content and branded content',d:'An ongoing editorial line with an operation behind it: calendar, formats, suppliers and curation.',e:[
       ['lead','Reporting and digital content at Planeta Sustent\u00e1vel.','ph1','Editora Abril'],
